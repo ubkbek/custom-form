@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+}
+
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+
+  .container{
+      width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 20px;
+      padding-right: 20px;
+  }
+
+  .heading1{
+      text-align: center;
+      color: #333;
+  }
+
+  .heading2{
+      border-bottom: 2px solid #333;
+      display: inline-block;
+      color: #333;
+  }
+
+  .devider{
+      width: 50%;
+      background-color: #333;
+      margin-bottom: 30px;
+  }
+
+label{
+    display: block;
+}
+
+.input-custom{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #333;
+    border-radius: 4px;
+}
+
+.checkbox:disabled + .input-custom{
+    background-color: #ccc;
+    opacity: 0.5;
+}
+
+.checkbox:hover + .input-custom, .checkbox:focus + .input-custom{
+    box-shadow: 0 0 0 1px #333;
+}
+
+.checkbox:checked + .input-custom{
+    background-image: url("./images/check-solid.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70%;
+}
+
+/* box */
+.box {
+width: 200px;
+height: 400px;
+background-color: lemonchiffon;
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.circle {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #333;
+}
+.line {
+    display: inline-block;
+    /* height: 2px; */
+    flex-grow: 1;
+    height: 1px;
+    background-color: #333;
+}
